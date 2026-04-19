@@ -1,30 +1,192 @@
-my website is working
-
-<!--
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Portfolio</title>
 <meta charset="UTF-8">
+<title>Maryvachi Studio</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:white;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ddd;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2a6df4;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#555;
+}
+
+nav a:hover{
+color:#2a6df4;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:white;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#777;
+}
+
+.section{
+padding:60px 40px;
+}
+
+.section h2{
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card img{
+width:100%;
+border-radius:5px;
+}
+
+.card h3{
+margin:10px 0 5px 0;
+}
+
+.button{
+display:inline-block;
+margin-top:10px;
+padding:8px 14px;
+background:#2a6df4;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.button.free{
+background:#2fa36b;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#777;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Portfolio</h1>
-<p>نام: </p>
-<p>رشته: معماری / گرافیک / ادیت ویدیو</p>
+<header>
+<div class="logo">Maryvachi Studio</div>
+<nav>
+<a href="#portfolio">Portfolio</a>
+<a href="#assets">Assets</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-<h2>نمونه کارها</h2>
+<section class="hero">
+<h1>Maryvachi Studio</h1>
+<p>Architecture • Graphics • Digital Assets</p>
+</section>
 
-<h3>پروژه 1</h3>
-<img src="project1.jpg" width="400">
+<section class="section" id="portfolio">
+<h2>Portfolio</h2>
 
-<h3>پروژه 2</h3>
-<img src="project2.jpg" width="400">
+<div class="grid">
 
-<h2>تماس</h2>
-<p>Email: your@email.com</p>
+<div class="card">
+<img src="images/project1.jpg">
+<h3>Architecture Render</h3>
+<p>Personal project</p>
+</div>
+
+<div class="card">
+<img src="images/project2.jpg">
+<h3>Graphic Design</h3>
+<p>Poster design</p>
+</div>
+
+<div class="card">
+<img src="images/project3.jpg">
+<h3>Video Edit</h3>
+<p>Motion project</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="assets">
+<h2>Assets</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/asset1.jpg">
+<h3>3D Model Pack</h3>
+<p>Free download</p>
+<a class="button free" href="files/modelpack.zip">Download</a>
+</div>
+
+<div class="card">
+<img src="images/asset2.jpg">
+<h3>Texture Pack</h3>
+<p>For purchase</p>
+<a class="button" href="#contact">Message me</a>
+</div>
+
+<div class="card">
+<img src="images/asset3.jpg">
+<h3>PSD Template</h3>
+<p>Free asset</p>
+<a class="button free" href="files/template.zip">Download</a>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+<p>If you want paid assets, message me:</p>
+<p>Instagram / Telegram / Email</p>
+<p>@maryvachi</p>
+</section>
+
+<footer>
+Maryvachi Studio © 2026
+</footer>
 
 </body>
 </html>
--->
